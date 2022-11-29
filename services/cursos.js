@@ -3,7 +3,7 @@ const config = require('../config');
 
 async function getAll(){
     const rows = await db.query(
-        `SELEC id, name FROM curso`
+        `SELECT id, name FROM curso`
     );
     const data = rows;
         
